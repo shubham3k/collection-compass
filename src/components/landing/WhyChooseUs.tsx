@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Users, Shield, Cpu } from "lucide-react";
+import { Clock, Percent, Shield, Star } from "lucide-react";
 
 const features = [
   {
-    icon: TrendingUp,
-    stat: "85%+",
-    title: "Recovery Rate",
-    description: "Industry-leading recovery rates through proven strategies and experienced professionals.",
+    icon: Clock,
+    stat: "24-48 Hrs",
+    title: "Quick Approvals",
+    description: "Fast loan processing with minimal documentation and instant in-principle approval.",
   },
   {
-    icon: Users,
-    stat: "50+",
-    title: "Trained Professionals",
-    description: "Skilled collection specialists with extensive training in negotiation and compliance.",
+    icon: Percent,
+    stat: "10.99%",
+    title: "Interest Rates From",
+    description: "Industry-best interest rates with no hidden charges. Transparent pricing always.",
   },
   {
     icon: Shield,
     stat: "100%",
-    title: "RBI & Legal Compliant",
-    description: "Complete adherence to RBI guidelines and all applicable debt collection regulations.",
+    title: "RBI Compliant",
+    description: "Registered Non-Banking Financial Company following all regulatory guidelines.",
   },
   {
-    icon: Cpu,
-    stat: "24/7",
-    title: "Technology Driven",
-    description: "Advanced CRM, analytics dashboards, and automated workflows for maximum efficiency.",
+    icon: Star,
+    stat: "10,000+",
+    title: "Happy Customers",
+    description: "Trusted by thousands for their financial needs with 4.5+ star rating.",
   },
 ];
 
@@ -42,20 +42,20 @@ const WhyChooseUs = () => {
           >
             <span className="inline-block text-primary font-semibold mb-4 tracking-wide text-sm">WHY CHOOSE US</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 tracking-tight">
-              Partner with the Leaders in Ethical Debt Recovery
+              Your Financial Growth is Our Priority
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              We combine decades of experience with cutting-edge technology to deliver 
-              exceptional recovery results while maintaining the highest ethical standards 
-              and protecting your brand reputation.
+              We combine technology with personalized service to make your loan 
+              journey seamless. From application to disbursement, experience 
+              hassle-free financing with complete transparency.
             </p>
             
             <div className="space-y-4">
               {[
-                "Customized recovery strategies for each portfolio segment",
-                "Real-time reporting and complete transparency",
-                "Dedicated account managers for personalized service",
-                "Multi-lingual support across all major Indian languages",
+                "Quick disbursement within 24-48 hours of approval",
+                "Flexible repayment options to suit your cash flow",
+                "Dedicated relationship managers for personalized support",
+                "100% paperless digital loan application process",
               ].map((item, index) => (
                 <motion.div
                   key={index}

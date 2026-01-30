@@ -4,8 +4,8 @@ import { Shield, Award, Lock, FileCheck, Quote } from "lucide-react";
 const certifications = [
   {
     icon: Shield,
-    title: "RBI Compliant",
-    description: "Full adherence to Reserve Bank of India guidelines for debt collection",
+    title: "RBI Registered NBFC",
+    description: "Registered with Reserve Bank of India under NBFC regulations",
   },
   {
     icon: Award,
@@ -14,26 +14,28 @@ const certifications = [
   },
   {
     icon: Lock,
-    title: "Data Security",
-    description: "Enterprise-grade data protection and privacy measures",
+    title: "PCI DSS Compliant",
+    description: "Payment Card Industry Data Security Standard compliance",
   },
   {
     icon: FileCheck,
-    title: "Legal Compliance",
-    description: "Complete adherence to all applicable debt collection laws",
+    title: "Fair Practice Code",
+    description: "Complete adherence to RBI Fair Practice Code guidelines",
   },
 ];
 
 const testimonials = [
   {
-    quote: "RecoveryPro has consistently delivered exceptional recovery rates while maintaining the highest ethical standards. Their transparency and professionalism have made them our preferred collection partner.",
-    author: "Senior VP, Collections",
-    company: "Leading Private Sector Bank",
+    quote: "Got my personal loan approved within 24 hours! The team was incredibly helpful and the entire process was completely transparent. No hidden charges at all.",
+    author: "Rajesh Kumar",
+    company: "IT Professional, Bangalore",
+    rating: 5,
   },
   {
-    quote: "The real-time reporting and dedicated account management have transformed how we track our portfolio performance. Highly recommended for any institution looking to improve recovery rates.",
-    author: "Head of Risk",
-    company: "Major NBFC",
+    quote: "FinServe Pro helped my business grow with a quick MSME loan. Their relationship manager understood our needs perfectly and offered the best rates in the market.",
+    author: "Priya Sharma",
+    company: "Business Owner, Mumbai",
+    rating: 5,
   },
 ];
 
@@ -51,7 +53,7 @@ const TrustIndicators = () => {
         >
           <span className="inline-block text-primary font-semibold mb-4 tracking-wide text-sm">TRUST & COMPLIANCE</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 tracking-tight">
-            Certified. Compliant. Trusted.
+            Regulated. Secure. Trusted.
           </h2>
         </motion.div>
 
@@ -89,7 +91,7 @@ const TrustIndicators = () => {
           className="text-center mb-12"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">
-            What Our Partners Say
+            What Our Customers Say
           </h3>
         </motion.div>
 
@@ -104,7 +106,14 @@ const TrustIndicators = () => {
               className="bg-card rounded-xl p-8 card-elevated border border-border relative"
             >
               <Quote className="absolute top-6 left-6 h-8 w-8 text-primary/15" />
-              <p className="text-foreground mb-6 italic leading-relaxed relative z-10 pt-4">
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-foreground mb-6 leading-relaxed relative z-10">
                 "{testimonial.quote}"
               </p>
               <div className="border-t border-border pt-4">

@@ -3,7 +3,8 @@ import HeroSection from "@/components/landing/HeroSection";
 import ServicesGrid from "@/components/landing/ServicesGrid";
 import WhyChooseUs from "@/components/landing/WhyChooseUs";
 import ProcessTimeline from "@/components/landing/ProcessTimeline";
-import IndustriesServed from "@/components/landing/IndustriesServed";
+import LoanProducts from "@/components/landing/LoanProducts";
+import EMICalculator from "@/components/landing/EMICalculator";
 import TrustIndicators from "@/components/landing/TrustIndicators";
 import ContactForm from "@/components/landing/ContactForm";
 import Footer from "@/components/landing/Footer";
@@ -17,7 +18,8 @@ const Index = () => {
         <ServicesGrid />
         <WhyChooseUs />
         <ProcessTimeline />
-        <IndustriesServed />
+        <LoanProducts />
+        <EMICalculator />
         <TrustIndicators />
         <ContactForm />
       </main>
